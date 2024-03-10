@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     color: white;
     background-image: linear-gradient(to right, #161e29,  #1c1342);
     display: flex;
