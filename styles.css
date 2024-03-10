@@ -96,10 +96,12 @@ section{
   }
 
   .source-code{
+    display: inline-block;
     color: white;
     text-decoration: none;
     border: 1px solid white;
     padding: 10px;
+    margin-bottom: 10px;
   }
 
   .uniname{
@@ -163,7 +165,7 @@ section{
   }
 
 @media screen and (max-width: 600px) {
-    .navbar a:not(:first-child) {display: none;}
+    .navbar a:not(.active) {display: none;}
     .navbar a.icon {
         float: right;
         display: block;
@@ -183,13 +185,20 @@ section{
         text-align: left;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    .intro-description p:not(.first-paragraph) {
+        display: none;
+    }
+    
     .intro {
         flex-direction: column;
     }
 
     .image {
         order: 2; /* Move image below description */
+    }
+    .main-body{
+        width: 85%;
     }
 }
 
