@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
       link.addEventListener('click', function(e) {
         e.preventDefault();
   
+        // Remove active class from all nav links
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+  
+        // Add active class to the clicked nav link
+        this.classList.add('active');
+  
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
   
@@ -23,5 +31,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
     });
-  });
+});
+
   

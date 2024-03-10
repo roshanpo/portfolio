@@ -80,6 +80,7 @@ section{
     display: inline-block;
     padding: 10px 20px;
     margin: 0 10px;
+    margin-bottom: 15px;
     text-decoration: none;
     color: #fff;
     background-color: #007bff;
@@ -178,6 +179,15 @@ section{
         float: none;
         display: block;
         text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .image {
+        order: 2; /* Move image below description */
     }
 }
 
